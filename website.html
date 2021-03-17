@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.side {
+  flex: 50%;
+  background-color: #f7f7f7;
+  padding: 20px;
+ }
+ 
+.main {   
+  flex: 50%;
+  background-color:#f7f7f7;
+  padding: 20px;
+} 
+ 
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #f7f7f7;
+  color: black;
+}
+
+.navbar {
+	overflow:hidden;
+	background-color:#2f8af1;
+}
+
+.navbar a {
+	float: left
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .side, .main {
+    flex: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+	
+
+.navbar a:hover {
+background-color: #d0f6ff;
+color:#3C3C3C;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+</style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<script> /* Vorname muss ausgefüllt sein  um sich anmelden zu können*/ 
+function validateForm() {
+	var x =document.forms["myForm"]["fname"].value;
+	if (x == ""){ 
+		alert("Name must be filled out");
+		return false;
+	}
+}
+
+
+
+</script>
+
+<title> Corona Student Support </title>
+
+
+</head>	
+
+<body style="background-color:#f7f7f7;">
+
+	<p>
+
+<h2 style="color:darkolivegreen;">In need of motivation?</h2>
+
+	<button onclick="myFunction()"> <b>Click here!</b> </button>
+
+<script>
+	function myFunction() {
+  		alert("Magic is believing in yourself. If you can make that happen, you can make anything happen. - Johann Wolfgang von Goethe");
+			}
+				</script>
+	<p>
+	<p>
+	
+	<div style="text-align:center;">
+	<img src="student.png" alt="Icon" width=10% height=10%</img hspace=10>
+	</div>
+
+	<div class="header">
+	<h1>CORONA STUDENT SUPPORT</h1>
+	</div>
+
+
+	<div class="navbar">
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	</div>
+	
+	
+	<div class="row">
+	  <div class="side">
+		<h2>Für Schüler <form name="myForm" onsubmit="return validateForm()" method="post">
+			Name: <input type="text" name="fname">
+			<input type="submit" value="Submit">
+			</form>
+			</h2>
+		<h5>Photo of me:</h5>
+		<img src="Zeitmanagement-Student.jpg" alt="Picture of Me" width=20% height=15%</img hspace=10>
+		<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+		<h3>More Text</h3>
+		<p>Lorem ipsum dolor sit ame.</p>
+		<div class="fakeimg" style="height:60px;">Image</div><br>
+		<div class="fakeimg" style="height:60px;">Image</div><br>
+		<div class="fakeimg" style="height:60px;">Image</div>
+	  </div>
+	  <div class="main">
+		<h2>Für Studenten <form name="myForm" onsubmit="return validateForm()" method="post">  <!-- Vorname muss ausgefüllt sein, um sich anmelden zu können-->
+			Name: <input type="text" name="fname">
+			<input type="submit" value="Submit">
+			</form>
+			</h2>
+		<h5>Title description, Dec 7, 2017</h5>
+		<div class="fakeimg" style="height:200px;">Image</div>
+		<p>Some text..</p>
+		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		<br>
+		<h2>TITLE HEADING</h2>
+		<h5>Title description, Sep 2, 2017</h5>
+		<div class="fakeimg" style="height:200px;">Image</div>
+		<p>Some text..</p>
+		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+	  </div>
+	</div>	
+
+	
+	<div style="padding:10px;text-align:center;background-color:#2C2C2C;color:white;">
+	<p> <b>IMPRESSUM - DATENSCHUTZ - KONTAKT </p></b>
+	</div>
+	
+	
+</body>
+
+</html>
